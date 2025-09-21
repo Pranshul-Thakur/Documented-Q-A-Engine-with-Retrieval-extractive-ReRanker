@@ -80,8 +80,8 @@ python src/run_eval.py
 
 ## 📸 Image Proof
 
-![API Documentation](data/Images/Screenshot 2025-09-21 202503.png)
+![API Documentation](data/Images/Screenshot%202025-09-21%20202503.png)
 
-![Query Execution](data/Images/mages/Screenshot 2025-09-21 203749.png)
+![Query Execution](data/Images/Screenshot%202025-09-21%20203749.png)
 
-![Query Execution](data/Images/mages/Screenshot 2025-09-21 203756.png)
+![API Response](data/Images/Screenshot%202025-09-21%20203756.png)
