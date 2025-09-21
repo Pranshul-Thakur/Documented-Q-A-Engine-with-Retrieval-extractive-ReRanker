@@ -25,7 +25,7 @@ pip install sentence-transformers faiss-cpu torch fastapi uvicorn python-multipa
             PyPDF2 pycryptodome rank-bm25 tqdm pandas scikit-learn joblib
 ```
 
-## ▶Usage
+## Usage
 1. **Ingest PDFs**
 
 ```
