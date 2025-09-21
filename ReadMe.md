@@ -2,7 +2,7 @@
 
 This project implements a **mini Q&A engine** over ~20 industrial & machine safety PDFs. It ingests documents, chunks them, builds embeddings for semantic search, and improves retrieval with a **hybrid reranker** (vector + BM25). Answers are **extractive** (taken directly from chunks) and always cite their source.
 
-## 🚀 Pipeline
+## Pipeline
 1. **Ingest** (`ingest_chunk.py`)
    * Splits PDFs into 80–350 word chunks.
    * Stores in `data/chunks.db` (SQLite).
@@ -17,7 +17,7 @@ This project implements a **mini Q&A engine** over ~20 industrial & machine safe
    * Compares **baseline** vs **hybrid** reranker.
    * Writes results to `experiments/eval_results.csv`.
 
-## ⚙️ Setup
+## Setup
 Install dependencies (latest versions are fine):
 
 ```
@@ -25,7 +25,7 @@ pip install sentence-transformers faiss-cpu torch fastapi uvicorn python-multipa
             PyPDF2 pycryptodome rank-bm25 tqdm pandas scikit-learn joblib
 ```
 
-## ▶️ Usage
+## ▶Usage
 1. **Ingest PDFs**
 
 ```
@@ -63,7 +63,7 @@ python src/run_eval.py
 
 → Results in `experiments/eval_results.csv`
 
-## 📊 Results (sample)
+## Results (sample)
 
 | id | query | baseline_hit | hybrid_hit |
 |----|-------|--------------|------------|
@@ -72,13 +72,13 @@ python src/run_eval.py
 | q3 | safe distances (robots) | ✅ | ✅ |
 | q8 | guarding requirements | ✅ | ❌ |
 
-## 💡 Learnings
+## Learnings
 * **Hybrid reranker** helps with precise technical terms (e.g., q2 improved).
 * But reranking can also **over-weight wrong matches** (q8 worsened).
 * Tunable knobs: α (blend weight), candidate pool size, abstain threshold.
 * This is an **extractive Q&A engine** — not full generative RAG (no LLM used).
 
-## 📸 Image Proof
+## Image Proof
 
 ![API Documentation](data/Images/Screenshot%202025-09-21%20202503.png)
 
