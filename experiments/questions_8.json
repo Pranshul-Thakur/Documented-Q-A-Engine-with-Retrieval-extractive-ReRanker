@@ -1,0 +1,42 @@
+[
+  {
+    "id": "q1",
+    "q": "What is lockout-tagout and why is it used?",
+    "expected_keywords": ["lockout", "tagout"]
+  },
+  {
+    "id": "q2",
+    "q": "Which standard covers machine safety controls?",
+    "expected_keywords": ["ISO 13849", "ISO 12100"]
+  },
+  {
+    "id": "q3",
+    "q": "What are safe distances for robotic arms?",
+    "expected_keywords": ["distance", "robot", "ISO 10218"]
+  },
+  {
+    "id": "q4",
+    "q": "How to perform a risk assessment for machinery?",
+    "expected_keywords": ["risk assessment", "hazard analysis"]
+  },
+  {
+    "id": "q5",
+    "q": "What is the purpose of emergency stop devices?",
+    "expected_keywords": ["emergency stop", "e-stop"]
+  },
+  {
+    "id": "q6",
+    "q": "What does functional safety mean?",
+    "expected_keywords": ["functional safety", "SIL", "PL"]
+  },
+  {
+    "id": "q7",
+    "q": "What steps reduce accidental startup of machines?",
+    "expected_keywords": ["startup", "lockout", "interlock"]
+  },
+  {
+    "id": "q8",
+    "q": "Which document explains guarding requirements?",
+    "expected_keywords": ["guarding", "machine guarding", "guard"]
+  }
+]

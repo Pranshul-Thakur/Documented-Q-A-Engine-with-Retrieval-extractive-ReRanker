@@ -1,0 +1,9 @@
+id,query,baseline_hit,hybrid_hit
+q1,What is lockout-tagout and why is it used?,True,True
+q2,Which standard covers machine safety controls?,False,True
+q3,What are safe distances for robotic arms?,True,True
+q4,How to perform a risk assessment for machinery?,True,True
+q5,What is the purpose of emergency stop devices?,True,True
+q6,What does functional safety mean?,True,True
+q7,What steps reduce accidental startup of machines?,True,True
+q8,Which document explains guarding requirements?,True,False
